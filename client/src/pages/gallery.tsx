@@ -1,41 +1,81 @@
 import Gallery from "@/components/ui/gallery";
 
 const galleryImages = [
+  // Exterior photos
   {
-    src: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-    alt: "Экстерьер дома 1",
+    src: "/assets/images/gallery/photos outside/IMG_2627.jpeg",
+    alt: "Экстерьер гостевого дома",
   },
   {
-    src: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-    alt: "Интерьер гостиной",
+    src: "/assets/images/gallery/photos outside/IMG_2628.jpeg",
+    alt: "Внешний вид дома",
   },
   {
-    src: "https://images.unsplash.com/photo-1544984243-ec57ea16fe25?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-    alt: "Бассейн с подогревом",
+    src: "/assets/images/gallery/photos outside/IMG_2629.jpeg",
+    alt: "Гостевой дом с террасой",
   },
   {
-    src: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-    alt: "Спальня в доме",
+    src: "/assets/images/gallery/photos outside/IMG_2630.jpeg",
+    alt: "Дом среди природы",
   },
   {
-    src: "https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-    alt: "Лесная тропа",
+    src: "/assets/images/gallery/photos outside/IMG_2631.jpeg",
+    alt: "Бассейн и терраса",
   },
   {
-    src: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-    alt: "Терраса с видом на лес",
+    src: "/assets/images/gallery/photos outside/IMG_2632.jpeg",
+    alt: "Зона отдыха на улице",
+  },
+  // Interior renders
+  {
+    src: "/assets/images/gallery/renders/Screenshot 2025-01-31 150717.png",
+    alt: "Интерьер гостиной в стиле лофт",
   },
   {
-    src: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-    alt: "Экстерьер дома 2",
+    src: "/assets/images/gallery/renders/Screenshot 2025-01-31 150750.png",
+    alt: "Дизайн интерьера",
   },
   {
-    src: "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-    alt: "Сауна",
+    src: "/assets/images/gallery/renders/Screenshot 2025-01-31 150816.png",
+    alt: "Современная кухня",
   },
   {
-    src: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-    alt: "Окрестности леса",
+    src: "/assets/images/gallery/renders/Screenshot 2025-01-31 150848.png",
+    alt: "Спальная зона",
+  },
+  {
+    src: "/assets/images/gallery/renders/Screenshot 2025-01-31 150859.png",
+    alt: "Ванная комната",
+  },
+  {
+    src: "/assets/images/gallery/renders/Screenshot 2025-01-31 150918.png",
+    alt: "Лофт интерьер",
+  },
+  // More exterior photos
+  {
+    src: "/assets/images/gallery/photos outside/IMG_2633.jpeg",
+    alt: "Окрестности дома",
+  },
+  {
+    src: "/assets/images/gallery/photos outside/IMG_2634.jpeg",
+    alt: "Территория гостевого дома",
+  },
+  {
+    src: "/assets/images/gallery/photos outside/IMG_2635.jpeg",
+    alt: "Лесная зона рядом с домом",
+  },
+  {
+    src: "/assets/images/gallery/photos outside/IMG_2636.jpeg",
+    alt: "Природа вокруг дома",
+  },
+  // Additional interior renders
+  {
+    src: "/assets/images/gallery/renders/Screenshot 2025-01-31 150948.png",
+    alt: "Интерьер второго дома",
+  },
+  {
+    src: "/assets/images/gallery/renders/Screenshot 2025-01-31 151013.png",
+    alt: "Современный дизайн",
   },
 ];
 

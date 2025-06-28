@@ -6,6 +6,9 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+// Serve static assets
+app.use('/assets', express.static('assets'));
+
 app.use((req, res, next) => {
   const start = Date.now();
   const path = req.path;

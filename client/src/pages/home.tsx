@@ -6,20 +6,16 @@ import { Link } from "wouter";
 
 const heroSlides = [
   {
-    image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080",
+    image: "/assets/images/hero/IMG_2640.jpeg",
     alt: "Современный гостевой дом La Villa Pine",
   },
   {
-    image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080",
-    alt: "Интерьер гостевого дома в стиле лофт",
+    image: "/assets/images/hero/IMG_2672.JPG",
+    alt: "Экстерьер гостевого дома",
   },
   {
-    image: "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080",
-    alt: "Бассейн с подогревом",
-  },
-  {
-    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080",
-    alt: "Лесные окрестности вокруг гостевого дома",
+    image: "/assets/images/hero/IMG_2675.jpeg",
+    alt: "Гостевой дом среди природы",
   },
 ];
 

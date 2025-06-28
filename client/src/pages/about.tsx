@@ -48,20 +48,20 @@ export default function AboutPage() {
 
             <div className="space-y-4 animate-slide-in-right">
               <img
-                src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500"
+                src="/assets/images/gallery/photos outside/IMG_2628.jpeg"
                 alt="Гостевой дом La Villa Pine"
                 className="rounded-xl shadow-lg w-full h-64 object-cover"
               />
 
               <div className="grid grid-cols-2 gap-4">
                 <img
-                  src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
-                  alt="Сауна в гостевом доме"
+                  src="/assets/images/gallery/renders/Screenshot 2025-01-31 150717.png"
+                  alt="Интерьер в стиле лофт"
                   className="rounded-lg shadow-md w-full h-32 object-cover"
                 />
                 <img
-                  src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
-                  alt="Лесной ручей рядом с домом"
+                  src="/assets/images/gallery/photos outside/IMG_2637.jpeg"
+                  alt="Территория вокруг дома"
                   className="rounded-lg shadow-md w-full h-32 object-cover"
                 />
               </div>
