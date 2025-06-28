@@ -52,7 +52,7 @@ export default function HomePage() {
               Два эксклюзивных гостевых дома с сауной, бассейном и видом на лес
             </p>
             <Link href="/contacts">
-              <Button size="lg" className="bg-accent hover:bg-blue-600 text-white px-8 py-4 text-lg font-semibold shadow-lg transform hover:scale-105 transition-all duration-300">
+              <Button size="lg" className="bg-accent hover:bg-accent/90 text-white px-8 py-4 text-lg font-semibold shadow-lg transform hover:scale-105 transition-all duration-300">
                 Забронировать сейчас
               </Button>
             </Link>
