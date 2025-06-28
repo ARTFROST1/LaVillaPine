@@ -10,10 +10,9 @@ export default function Footer() {
   ];
 
   const socialLinks = [
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: MessageCircle, href: "#", label: "Telegram" },
-    { icon: MessageCircle, href: "#", label: "WhatsApp" },
-    { icon: MessageCircle, href: "#", label: "VK" },
+    { icon: Instagram, href: "https://www.instagram.com/lavillapine/", label: "Instagram" },
+    { icon: MessageCircle, href: "https://t.me/LaVillaPine", label: "Telegram" },
+    { icon: MessageCircle, href: "https://vk.com/lavillapine", label: "ВКонтакте" },
   ];
 
   return (
@@ -62,15 +61,15 @@ export default function Footer() {
             <div className="space-y-2 text-gray-300">
               <div className="flex items-center">
                 <Phone className="w-4 h-4 mr-2" />
-                <span>+7 (XXX) XXX-XX-XX</span>
+                <span>+7 918 924 0007</span>
               </div>
               <div className="flex items-center">
                 <Mail className="w-4 h-4 mr-2" />
-                <span>info@lavillapine.ru</span>
+                <span>lavillapine@yandex.ru</span>
               </div>
               <div className="flex items-center">
                 <MapPin className="w-4 h-4 mr-2" />
-                <span>Московская область</span>
+                <span>Республика Адыгея</span>
               </div>
             </div>
           </div>

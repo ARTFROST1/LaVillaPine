@@ -16,9 +16,9 @@ export default function Header() {
   ];
 
   const socialLinks = [
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: MessageCircle, href: "#", label: "Telegram" },
-    { icon: MessageCircle, href: "#", label: "WhatsApp" },
+    { icon: Instagram, href: "https://www.instagram.com/lavillapine/", label: "Instagram" },
+    { icon: MessageCircle, href: "https://t.me/LaVillaPine", label: "Telegram" },
+    { icon: MessageCircle, href: "https://vk.com/lavillapine", label: "ВКонтакте" },
   ];
 
   return (

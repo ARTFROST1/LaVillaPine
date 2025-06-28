@@ -31,7 +31,7 @@ export default function ContactsPage() {
                       </div>
                       <div>
                         <div className="text-sm text-secondary">Телефон</div>
-                        <div className="font-semibold">+7 (XXX) XXX-XX-XX</div>
+                        <div className="font-semibold">+7 918 924 0007</div>
                       </div>
                     </div>
 
@@ -41,7 +41,7 @@ export default function ContactsPage() {
                       </div>
                       <div>
                         <div className="text-sm text-secondary">Email</div>
-                        <div className="font-semibold">info@lavillapine.ru</div>
+                        <div className="font-semibold">lavillapine@yandex.ru</div>
                       </div>
                     </div>
 
@@ -52,7 +52,7 @@ export default function ContactsPage() {
                       <div>
                         <div className="text-sm text-secondary">Адрес</div>
                         <div className="font-semibold">
-                          Московская область<br />г. Сергиев Посад
+                          Кольцевая улица, 4, посёлок Тульский<br />Майкопский район, Республика Адыгея
                         </div>
                       </div>
                     </div>

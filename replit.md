@@ -111,8 +111,14 @@ La Villa Pine is a modern React-based website for a luxury guest house rental bu
 
 ## Changelog
 
-Changelog:
-- June 28, 2025. Initial setup
+- June 28, 2025: Project completion
+  - Updated color scheme to match loft interior design (warm terracotta/brick orange)
+  - Integrated real photos from user uploads (hero, gallery, about pages) 
+  - Added authentic contact information (phone, email, address, social media)
+  - Created comprehensive PROJECT_GUIDE.md for website management
+  - Fixed accessibility issues in gallery lightbox
+  - Configured static asset serving for user photos
+- June 28, 2025: Initial setup
 
 ## User Preferences
 
