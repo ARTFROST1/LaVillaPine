@@ -27,7 +27,7 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/">
-            <h1 className="text-2xl font-bold text-primary hover:text-accent transition-colors duration-300">
+            <h1 className="text-2xl font-bold text-primary hover:text-accent transition-colors duration-300 ml-[10px] mr-[10px]">
               La Villa Pine
             </h1>
           </Link>
