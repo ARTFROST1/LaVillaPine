@@ -1,0 +1,124 @@
+import { Card, CardContent } from "@/components/ui/card";
+
+export default function AboutPage() {
+  return (
+    <div className="animate-fade-in">
+      {/* About Section */}
+      <section className="section-padding bg-muted">
+        <div className="container-width">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="animate-slide-in-left">
+              <h1 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+                О La Villa Pine
+              </h1>
+              <div className="space-y-6 text-lg text-secondary leading-relaxed">
+                <p>
+                  La Villa Pine — это два эксклюзивных гостевых дома, созданных для тех,
+                  кто ценит комфорт, стиль и единение с природой. Каждый дом выполнен в
+                  современном стиле лофт с качественным дизайнерским ремонтом.
+                </p>
+                <p>
+                  Наши гости получают полную приватность и все удобства для
+                  незабываемого отдыха: собственную сауну, бассейн с подогревом и
+                  потрясающий вид на лес. Здесь вы сможете отдохнуть от городской суеты
+                  и насладиться тишиной природы.
+                </p>
+                <p>
+                  Расположение наших домов уникально — прямо за забором начинается
+                  красивый лес, где обитают белки и множество птиц, а поблизости
+                  протекает живописный ручей.
+                </p>
+              </div>
+
+              <div className="mt-8 grid grid-cols-2 gap-6">
+                <Card className="text-center p-4 bg-white shadow-sm">
+                  <CardContent className="pt-4">
+                    <div className="text-2xl font-bold text-accent mb-1">2</div>
+                    <div className="text-sm text-secondary">Гостевых дома</div>
+                  </CardContent>
+                </Card>
+                <Card className="text-center p-4 bg-white shadow-sm">
+                  <CardContent className="pt-4">
+                    <div className="text-2xl font-bold text-accent mb-1">100%</div>
+                    <div className="text-sm text-secondary">Приватность</div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+
+            <div className="space-y-4 animate-slide-in-right">
+              <img
+                src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500"
+                alt="Гостевой дом La Villa Pine"
+                className="rounded-xl shadow-lg w-full h-64 object-cover"
+              />
+
+              <div className="grid grid-cols-2 gap-4">
+                <img
+                  src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
+                  alt="Сауна в гостевом доме"
+                  className="rounded-lg shadow-md w-full h-32 object-cover"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
+                  alt="Лесной ручей рядом с домом"
+                  className="rounded-lg shadow-md w-full h-32 object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="section-padding bg-white">
+        <div className="container-width">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+              Наши преимущества
+            </h2>
+            <p className="text-xl text-secondary max-w-2xl mx-auto">
+              Что делает отдых в La Villa Pine особенным
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                title: "Современный дизайн",
+                description: "Интерьер в стиле лофт с дизайнерской мебелью и качественной отделкой",
+              },
+              {
+                title: "Собственная сауна",
+                description: "Финская сауна с панорамным видом на лес для полного расслабления",
+              },
+              {
+                title: "Бассейн с подогревом",
+                description: "Частный бассейн, которым можно пользоваться круглый год",
+              },
+              {
+                title: "Единение с природой",
+                description: "Лесная тишина, пение птиц и журчание ручья создают атмосферу покоя",
+              },
+              {
+                title: "Полная приватность",
+                description: "Отдельные дома без соседей для максимального комфорта",
+              },
+              {
+                title: "Удобное расположение",
+                description: "Легкая доступность из Москвы при полном уединении",
+              },
+            ].map((feature, index) => (
+              <Card key={index} className="p-6 hover:shadow-lg transition-shadow duration-300">
+                <CardContent className="pt-6">
+                  <h3 className="text-lg font-semibold mb-3">{feature.title}</h3>
+                  <p className="text-secondary">{feature.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
