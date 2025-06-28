@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, Grid, Images, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
 interface GalleryImage {
   src: string;
@@ -124,6 +125,9 @@ export default function Gallery({ images, className = "" }: GalleryProps) {
       {/* Lightbox */}
       <Dialog open={lightboxOpen} onOpenChange={setLightboxOpen}>
         <DialogContent className="max-w-4xl max-h-[90vh] p-0 bg-transparent border-none">
+          <VisuallyHidden>
+            <DialogTitle>Просмотр изображения</DialogTitle>
+          </VisuallyHidden>
           <div className="relative">
             <img
               src={images[lightboxImage]?.src}
