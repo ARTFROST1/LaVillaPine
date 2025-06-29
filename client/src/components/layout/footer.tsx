@@ -10,9 +10,21 @@ export default function Footer() {
   ];
 
   const socialLinks = [
-    { icon: Instagram, href: "https://www.instagram.com/lavillapine/", label: "Instagram" },
-    { icon: MessageCircle, href: "https://t.me/LaVillaPine", label: "Telegram" },
-    { icon: MessageCircle, href: "https://vk.com/lavillapine", label: "ВКонтакте" },
+    {
+      icon: Instagram,
+      href: "https://www.instagram.com/lavillapine/",
+      label: "Instagram",
+    },
+    {
+      icon: MessageCircle,
+      href: "https://t.me/LaVillaPine",
+      label: "Telegram",
+    },
+    {
+      icon: MessageCircle,
+      href: "https://vk.com/lavillapine",
+      label: "ВКонтакте",
+    },
   ];
 
   return (
@@ -69,14 +81,14 @@ export default function Footer() {
               </div>
               <div className="flex items-center">
                 <MapPin className="w-4 h-4 mr-2" />
-                <span>Республика Адыгея</span>
+                <span className="text-left"> Республика Адыгея, Майкопский район, посёлок Тульский, Кольцевая улица, 4</span>
               </div>
             </div>
           </div>
         </div>
 
         <div className="border-t border-gray-600 mt-8 pt-8 text-center text-gray-300">
-          <p>&copy; 2024 La Villa Pine. Все права защищены.</p>
+          <p>&copy; 2025 La Villa Pine. Все права защищены.</p>
         </div>
       </div>
     </footer>
