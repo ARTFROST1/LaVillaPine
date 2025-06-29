@@ -50,7 +50,7 @@ export default function Footer() {
                 <a
                   key={index}
                   href={social.href}
-                  className="w-10 h-10 bg-accent rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors duration-300"
+                  className="w-10 h-10 bg-accent rounded-full flex items-center justify-center hover:bg-white hover:text-black transition-colors duration-300"
                   aria-label={social.label}
                 >
                   <social.icon className="w-4 h-4" />

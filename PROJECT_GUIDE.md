@@ -7,7 +7,7 @@
 # Start the development server
 npm run dev
 ```
-The website will be available at: `http://localhost:5000`
+The website will be available at: `http://localhost:8080`
 
 ### File Structure Overview
 ```

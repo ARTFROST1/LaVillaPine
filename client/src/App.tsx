@@ -11,6 +11,16 @@ import Gallery from "@/pages/gallery";
 import Booking from "@/pages/booking";
 import Contacts from "@/pages/contacts";
 import NotFound from "@/pages/not-found";
+import { useEffect } from "react";
+import { useLocation } from "wouter";
+
+function Redirect({ to }: { to: string }) {
+  const [, setLocation] = useLocation();
+  useEffect(() => {
+    setLocation(to);
+  }, [to, setLocation]);
+  return null;
+}
 
 function Router() {
   return (
@@ -20,7 +30,9 @@ function Router() {
       <Route path="/gallery" component={Gallery} />
       <Route path="/booking" component={Booking} />
       <Route path="/contacts" component={Contacts} />
-      <Route component={NotFound} />
+      <Route>
+        <Redirect to="/" />
+      </Route>
     </Switch>
   );
 }
