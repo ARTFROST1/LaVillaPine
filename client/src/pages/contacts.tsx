@@ -60,25 +60,7 @@ export default function ContactsPage() {
                 </CardContent>
               </Card>
 
-              {/* Booking Module Placeholder */}
-              <Card className="p-6 shadow-sm border-2 border-dashed border-gray-300">
-                <CardContent className="pt-6">
-                  <h4 className="text-xl font-semibold text-primary mb-4">
-                    Модуль бронирования
-                  </h4>
-                  <p className="text-secondary mb-4">
-                    Здесь будет размещен сторонний модуль бронирования
-                  </p>
-                  <div className="bg-gray-100 h-48 rounded-lg flex items-center justify-center">
-                    <div className="text-center text-gray-500">
-                      <Calendar className="w-16 h-16 mx-auto mb-4" />
-                      <p>
-                        Модуль бронирования<br />будет интегрирован здесь
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+              
             </div>
 
             {/* Contact Form and Map */}
