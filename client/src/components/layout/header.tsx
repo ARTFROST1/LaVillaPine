@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, Instagram, MessageCircle } from "lucide-react";
+import { Menu, X, Instagram } from "lucide-react";
+import { FaTelegram, FaVk } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import Logo from "@/components/ui/logo";
 
 export default function Header() {
   const [location] = useLocation();
@@ -12,13 +14,14 @@ export default function Header() {
     { name: "Главная", href: "/" },
     { name: "О нас", href: "/about" },
     { name: "Галерея", href: "/gallery" },
+    { name: "Бронирование", href: "/booking" },
     { name: "Контакты", href: "/contacts" },
   ];
 
   const socialLinks = [
     { icon: Instagram, href: "https://www.instagram.com/lavillapine/", label: "Instagram" },
-    { icon: MessageCircle, href: "https://t.me/LaVillaPine", label: "Telegram" },
-    { icon: MessageCircle, href: "https://vk.com/lavillapine", label: "ВКонтакте" },
+    { icon: FaTelegram, href: "https://t.me/LaVillaPine", label: "Telegram" },
+    { icon: FaVk, href: "https://vk.com/lavillapine", label: "ВКонтакте" },
   ];
 
   return (
@@ -26,11 +29,7 @@ export default function Header() {
       <div className="container-width">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/">
-            <h1 className="text-2xl font-bold text-primary hover:text-accent transition-colors duration-300 ml-[10px] mr-[10px]">
-              La Villa Pine
-            </h1>
-          </Link>
+          <Logo className="ml-[10px] mr-[10px]" />
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">

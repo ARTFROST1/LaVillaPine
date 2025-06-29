@@ -26,12 +26,13 @@ The website will be available at: `http://localhost:5000`
 
 **Navigation Menu:**
 - File: `client/src/components/layout/header.tsx`
-- Lines 12-16: Menu items (Главная, О нас, Галерея, Контакты)
+- Lines 12-17: Menu items (Главная, О нас, Галерея, Бронирование, Контакты)
 
 **Contact Information:**
-- Header: `client/src/components/layout/header.tsx` (lines 19-22)
-- Footer: `client/src/components/layout/footer.tsx` (lines 13-16, 62-72)
+- Header: `client/src/components/layout/header.tsx` (lines 20-23)
+- Footer: `client/src/components/layout/footer.tsx` (lines 14-29, 63-73)
 - Contact Page: `client/src/pages/contacts.tsx` (lines 32-49)
+- Booking Page: `client/src/pages/booking.tsx` (contact section at bottom)
 
 **Home Page Content:**
 - File: `client/src/pages/home.tsx`
@@ -48,6 +49,12 @@ The website will be available at: `http://localhost:5000`
 - File: `client/src/pages/gallery.tsx`
 - Lines 47-53: Page title and description
 
+**Booking Page:**
+- File: `client/src/pages/booking.tsx`
+- Modern full-screen page with background image
+- Placeholder for third-party booking system integration
+- Contact information and booking details
+
 ### 🖼️ Managing Images
 
 **Image Locations:**
@@ -55,6 +62,13 @@ The website will be available at: `http://localhost:5000`
 - Gallery photos: `assets/images/gallery/`
 - About page: `assets/images/about/`
 - Logos: `assets/logos/`
+
+**Logo Management:**
+- Logo Component: `client/src/components/ui/logo.tsx`
+- To replace placeholder logo:
+  1. Upload your logo to `assets/logos/logo.png`
+  2. In `client/src/components/ui/logo.tsx`, uncomment the img tag and remove the placeholder div
+  3. Adjust size classes if needed (sm/md/lg options available)
 
 **Adding New Images:**
 1. Upload files to appropriate asset folders
@@ -86,6 +100,12 @@ The website will be available at: `http://localhost:5000`
 - Instagram: https://www.instagram.com/lavillapine/
 - Telegram: https://t.me/LaVillaPine
 - VKontakte: https://vk.com/lavillapine
+
+**New Features:**
+- Updated Telegram and VK icons using react-icons
+- Separate booking page with modern design
+- Logo component with placeholder for easy replacement
+- Enhanced text shadow on main page title
 
 ## Development Commands
 
@@ -137,16 +157,28 @@ Edit these files:
 - Edit `client/src/index.css`
 - Modify the `:root` and `.dark` CSS variables
 
-### 4. Adding New Pages
+### 4. Adding New Pages  
 1. Create new file in `client/src/pages/`
 2. Add route to `client/src/App.tsx`
-3. Add navigation link to header
+3. Add navigation link to header and footer
 
-### 5. Form Submissions
+### 5. Managing Logo
+1. Upload logo image to `assets/logos/logo.png`
+2. Edit `client/src/components/ui/logo.tsx`
+3. Replace placeholder with actual image
+
+### 6. Form Submissions
 Contact form data is stored in memory and handled by:
 - Frontend: `client/src/components/ui/contact-form.tsx`
 - Backend: `server/routes.ts` (POST /api/contact)
 - Storage: `server/storage.ts`
+
+### 7. Third-Party Booking Integration
+The booking page (`client/src/pages/booking.tsx`) is designed to accommodate:
+- Third-party booking widgets
+- Payment processing systems
+- Calendar integration
+- Reservation management systems
 
 ## Deployment
 
@@ -179,8 +211,11 @@ The project is ready for deployment. All static assets are served properly, and 
 | Navigation | `client/src/components/layout/header.tsx` |
 | Footer | `client/src/components/layout/footer.tsx` |
 | Gallery images | `client/src/pages/gallery.tsx` |
+| Booking page | `client/src/pages/booking.tsx` |
+| Logo component | `client/src/components/ui/logo.tsx` |
 | Colors | `client/src/index.css` |
 | Hero images | `assets/images/hero/` |
 | Gallery photos | `assets/images/gallery/` |
+| Logo files | `assets/logos/` |
 
 This guide covers all the essential aspects of managing your La Villa Pine website. Keep this file as reference for future updates!

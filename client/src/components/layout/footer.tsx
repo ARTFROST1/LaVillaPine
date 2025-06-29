@@ -1,11 +1,13 @@
 import { Link } from "wouter";
-import { Instagram, MessageCircle, Phone, Mail, MapPin } from "lucide-react";
+import { Instagram, Phone, Mail, MapPin } from "lucide-react";
+import { FaTelegram, FaVk } from "react-icons/fa";
 
 export default function Footer() {
   const navigation = [
     { name: "Главная", href: "/" },
     { name: "О нас", href: "/about" },
     { name: "Галерея", href: "/gallery" },
+    { name: "Бронирование", href: "/booking" },
     { name: "Контакты", href: "/contacts" },
   ];
 
@@ -16,12 +18,12 @@ export default function Footer() {
       label: "Instagram",
     },
     {
-      icon: MessageCircle,
+      icon: FaTelegram,
       href: "https://t.me/LaVillaPine",
       label: "Telegram",
     },
     {
-      icon: MessageCircle,
+      icon: FaVk,
       href: "https://vk.com/lavillapine",
       label: "ВКонтакте",
     },

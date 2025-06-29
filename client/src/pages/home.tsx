@@ -46,12 +46,12 @@ export default function HomePage() {
           <div className="text-center text-white px-4 max-w-4xl mx-auto animate-slide-up">
             <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-shadow">
               Добро пожаловать в<br />
-              <span className="text-accent">La Villa Pine</span>
+              <span className="text-accent" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8), 1px 1px 2px rgba(0,0,0,0.6)' }}>La Villa Pine</span>
             </h2>
             <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto text-shadow">
               Два эксклюзивных гостевых дома с сауной, бассейном и видом на лес
             </p>
-            <Link href="/contacts">
+            <Link href="/booking">
               <Button size="lg" className="bg-accent hover:bg-accent/90 text-white px-8 py-4 text-lg font-semibold shadow-lg transform hover:scale-105 transition-all duration-300">
                 Забронировать сейчас
               </Button>
