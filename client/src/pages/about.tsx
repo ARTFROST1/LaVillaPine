@@ -119,6 +119,47 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* Advantages Section */}
+      <section className="section-padding bg-gray-50">
+        <div className="container-width">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+              Дополнительные преимущества
+            </h2>
+            <p className="text-xl text-secondary max-w-2xl mx-auto">
+              Что делает отдых в La Villa Pine еще более особенным
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { title: "Безопасность", description: "Охраняемая закрытая территория с видеонаблюдением", image: "gallery5.jpg" },
+              { title: "Wi-Fi", description: "Высокоскоростной интернет по всей территории комплекса", image: "gallery6.jpg" },
+              { title: "Парковка", description: "Бесплатная охраняемая парковка для каждого дома", image: "gallery7.jpg" },
+              { title: "Расположение", description: "Легкий доступ к горнолыжным склонам и термальным источникам", image: "gallery8.jpg" },
+              { title: "Сервис", description: "Персональный консьерж-сервис для решения любых вопросов", image: "gallery9.jpg" },
+              { title: "24/7", description: "Круглосуточная техническая поддержка и служба безопасности", image: "gallery10.jpg" },
+              { title: "Кухня", description: "Полностью оборудованная кухня с современной техникой", image: "gallery11.jpg" },
+              { title: "Комфорт", description: "Премиальные постельные принадлежности и банные халаты", image: "gallery12.jpg" },
+            ].map((advantage, index) => (
+              <div key={index} className="text-center p-6 bg-white rounded-xl shadow-sm">
+                <div className="w-16 h-16 rounded-lg overflow-hidden mx-auto mb-4">
+                  <img 
+                    src={`/assets/images/gallery/${advantage.image}`} 
+                    alt={advantage.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="font-semibold text-primary mb-2">{advantage.title}</h3>
+                <p className="text-secondary text-sm">
+                  {advantage.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

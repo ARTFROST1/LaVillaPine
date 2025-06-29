@@ -4,7 +4,7 @@ import { Menu, X, Instagram } from "lucide-react";
 import { FaTelegram, FaVk } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import Logo from "@/components/ui/logo";
+
 
 export default function Header() {
   const [location] = useLocation();
@@ -29,7 +29,9 @@ export default function Header() {
       <div className="container-width">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Logo className="ml-[10px] mr-[10px]" />
+          <Link href="/" className="hover:opacity-80 transition-opacity">
+            <h1 className="text-2xl font-bold text-primary">LaVillaPine</h1>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">

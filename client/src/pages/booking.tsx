@@ -111,16 +111,16 @@ export default function BookingPage() {
               </h3>
               
               <div className="grid md:grid-cols-2 gap-4 mb-6">
-                <div className="flex items-center justify-center space-x-3 bg-white/10 rounded-lg p-3">
-                  <Phone className="w-5 h-5 text-accent" />
+                <div className="flex items-center space-x-3 bg-white/10 rounded-lg p-3">
+                  <Phone className="w-5 h-5 text-accent flex-shrink-0" />
                   <div className="text-sm">
                     <div className="font-medium">Телефон</div>
                     <div className="text-gray-200">+7 918 924 0007</div>
                   </div>
                 </div>
                 
-                <div className="flex items-center justify-center space-x-3 bg-white/10 rounded-lg p-3">
-                  <Mail className="w-5 h-5 text-accent" />
+                <div className="flex items-center space-x-3 bg-white/10 rounded-lg p-3">
+                  <Mail className="w-5 h-5 text-accent flex-shrink-0" />
                   <div className="text-sm">
                     <div className="font-medium">Email</div>
                     <div className="text-gray-200">lavillapine@yandex.ru</div>
@@ -137,7 +137,7 @@ export default function BookingPage() {
                 </Button>
                 <Button 
                   variant="outline"
-                  className="border-white text-white hover:bg-white/10 font-medium px-6"
+                  className="border-white text-white hover:bg-white/10 hover:text-white font-medium px-6 transition-colors"
                   onClick={() => window.location.href = 'mailto:lavillapine@yandex.ru'}
                 >
                   Написать

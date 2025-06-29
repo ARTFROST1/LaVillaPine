@@ -76,8 +76,14 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <Card key={index} className="feature-card text-center p-6 bg-muted border-none animate-slide-up" style={{ animationDelay: `${index * 0.2}s` }}>
-                <CardContent className="pt-6">
+              <Card key={index} className="feature-card text-center p-6 bg-muted border-none animate-slide-up relative overflow-hidden" style={{ animationDelay: `${index * 0.2}s` }}>
+                <div 
+                  className="absolute inset-0 bg-cover bg-center opacity-20"
+                  style={{
+                    backgroundImage: `url('/assets/images/gallery/gallery${index + 2}.jpg')`
+                  }}
+                />
+                <CardContent className="pt-6 relative z-10">
                   <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
                     <feature.icon className="w-8 h-8 text-white" />
                   </div>
