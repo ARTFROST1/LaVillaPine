@@ -85,32 +85,45 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
+                title: "Бассейны с термальной водой Майкопского минерального источника",
+                description: "Наслаждайтесь целебными свойствами термальной воды круглый год",
+                image: "/assets/images/gallery/renders/Screenshot 2025-01-31 151013.png"
+              },
+              {
+                title: "Барбекю зона для приготовления семейного ужина на открытом огне",
+                description: "Уютная зона для приготовления блюд на свежем воздухе с семьей и друзьями",
+                image: "/assets/images/gallery/renders/Screenshot 2025-01-31 150948.png"
+              },
+              {
                 title: "Современный дизайн",
                 description: "Интерьер в стиле лофт с дизайнерской мебелью и качественной отделкой",
+                image: "/assets/images/gallery/renders/Screenshot 2025-01-31 150717.png"
               },
               {
                 title: "Собственная сауна",
                 description: "Финская сауна с панорамным видом на лес для полного расслабления",
-              },
-              {
-                title: "Бассейн с подогревом",
-                description: "Частный бассейн, которым можно пользоваться круглый год",
+                image: "/assets/images/gallery/renders/Screenshot 2025-01-31 151155.png"
               },
               {
                 title: "Единение с природой",
                 description: "Лесная тишина, пение птиц и журчание ручья создают атмосферу покоя",
+                image: "/assets/images/gallery/photos outside/IMG_2637.jpeg"
               },
               {
                 title: "Полная приватность",
                 description: "Отдельные дома без соседей для максимального комфорта",
-              },
-              {
-                title: "Удобное расположение",
-                description: "Легкая доступность из Москвы при полном уединении",
+                image: "/assets/images/gallery/photos outside/IMG_2628.jpeg"
               },
             ].map((feature, index) => (
-              <Card key={index} className="p-6 hover:shadow-lg transition-shadow duration-300">
-                <CardContent className="pt-6">
+              <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <div className="h-48 overflow-hidden">
+                  <img 
+                    src={feature.image} 
+                    alt={feature.title}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <CardContent className="p-6">
                   <h3 className="text-lg font-semibold mb-3">{feature.title}</h3>
                   <p className="text-secondary">{feature.description}</p>
                 </CardContent>
@@ -120,46 +133,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Advantages Section */}
-      <section className="section-padding bg-gray-50">
-        <div className="container-width">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-              Дополнительные преимущества
-            </h2>
-            <p className="text-xl text-secondary max-w-2xl mx-auto">
-              Что делает отдых в La Villa Pine еще более особенным
-            </p>
-          </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { title: "Безопасность", description: "Охраняемая закрытая территория с видеонаблюдением", image: "gallery5.jpg" },
-              { title: "Wi-Fi", description: "Высокоскоростной интернет по всей территории комплекса", image: "gallery6.jpg" },
-              { title: "Парковка", description: "Бесплатная охраняемая парковка для каждого дома", image: "gallery7.jpg" },
-              { title: "Расположение", description: "Легкий доступ к горнолыжным склонам и термальным источникам", image: "gallery8.jpg" },
-              { title: "Сервис", description: "Персональный консьерж-сервис для решения любых вопросов", image: "gallery9.jpg" },
-              { title: "24/7", description: "Круглосуточная техническая поддержка и служба безопасности", image: "gallery10.jpg" },
-              { title: "Кухня", description: "Полностью оборудованная кухня с современной техникой", image: "gallery11.jpg" },
-              { title: "Комфорт", description: "Премиальные постельные принадлежности и банные халаты", image: "gallery12.jpg" },
-            ].map((advantage, index) => (
-              <div key={index} className="text-center p-6 bg-white rounded-xl shadow-sm">
-                <div className="w-16 h-16 rounded-lg overflow-hidden mx-auto mb-4">
-                  <img 
-                    src={`/assets/images/gallery/${advantage.image}`} 
-                    alt={advantage.title}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <h3 className="font-semibold text-primary mb-2">{advantage.title}</h3>
-                <p className="text-secondary text-sm">
-                  {advantage.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

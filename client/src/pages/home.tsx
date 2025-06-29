@@ -80,7 +80,11 @@ export default function HomePage() {
                 <div 
                   className="absolute inset-0 bg-cover bg-center opacity-20"
                   style={{
-                    backgroundImage: `url('/assets/images/gallery/gallery${index + 2}.jpg')`
+                    backgroundImage: index === 0 
+                      ? `url('/assets/images/gallery/renders/Screenshot 2025-01-31 150717.png')`
+                      : index === 1 
+                      ? `url('/assets/images/gallery/photos outside/IMG_2628.jpeg')`
+                      : `url('/assets/images/gallery/photos outside/IMG_2637.jpeg')`
                   }}
                 />
                 <CardContent className="pt-6 relative z-10">

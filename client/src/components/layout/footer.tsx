@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Instagram, Phone, Mail, MapPin } from "lucide-react";
+import { Instagram, Phone, Mail, MapPin, ShoppingBag } from "lucide-react";
 import { FaTelegram, FaVk } from "react-icons/fa";
 
 export default function Footer() {
@@ -26,6 +26,11 @@ export default function Footer() {
       icon: FaVk,
       href: "https://vk.com/lavillapine",
       label: "ВКонтакте",
+    },
+    {
+      icon: ShoppingBag,
+      href: "#", // Заменить на реальную ссылку Авито
+      label: "Авито",
     },
   ];
 
