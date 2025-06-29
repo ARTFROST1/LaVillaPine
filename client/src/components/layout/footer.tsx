@@ -1,6 +1,7 @@
 import { Link } from "wouter";
-import { Instagram, Phone, Mail, MapPin, ShoppingBag } from "lucide-react";
+import { Instagram, Phone, Mail, MapPin } from "lucide-react";
 import { FaTelegram, FaVk } from "react-icons/fa";
+import AvitoIcon from "@/components/ui/avito-icon";
 
 export default function Footer() {
   const navigation = [
@@ -28,7 +29,7 @@ export default function Footer() {
       label: "ВКонтакте",
     },
     {
-      icon: ShoppingBag,
+      icon: AvitoIcon,
       href: "#", // Заменить на реальную ссылку Авито
       label: "Авито",
     },
@@ -88,7 +89,11 @@ export default function Footer() {
               </div>
               <div className="flex items-center">
                 <MapPin className="w-4 h-4 mr-2" />
-                <span className="text-left"> Республика Адыгея, Майкопский район, посёлок Тульский, Кольцевая улица, 4</span>
+                <span className="text-left">
+                  {" "}
+                  Республика Адыгея, Майкопский район, посёлок Тульский,
+                  Кольцевая улица, 4
+                </span>
               </div>
             </div>
           </div>

@@ -4,6 +4,7 @@ import { Menu, X, Instagram } from "lucide-react";
 import { FaTelegram, FaVk } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import AvitoIcon from "@/components/ui/avito-icon";
 
 
 export default function Header() {
@@ -22,6 +23,7 @@ export default function Header() {
     { icon: Instagram, href: "https://www.instagram.com/lavillapine/", label: "Instagram" },
     { icon: FaTelegram, href: "https://t.me/LaVillaPine", label: "Telegram" },
     { icon: FaVk, href: "https://vk.com/lavillapine", label: "ВКонтакте" },
+    { icon: AvitoIcon, href: "#", label: "Авито" },
   ];
 
   return (
