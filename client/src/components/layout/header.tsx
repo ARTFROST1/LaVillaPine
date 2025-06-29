@@ -30,7 +30,7 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="hover:opacity-80 transition-opacity">
-            <h1 className="text-2xl font-bold text-primary">LaVillaPine</h1>
+            <h1 className="text-2xl font-bold text-primary ml-[10px] mr-[10px]">LaVillaPine</h1>
           </Link>
 
           {/* Desktop Navigation */}
