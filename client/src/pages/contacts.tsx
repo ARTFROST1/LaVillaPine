@@ -13,7 +13,8 @@ export default function ContactsPage() {
               Контакты
             </h1>
             <p className="text-xl text-secondary max-w-2xl mx-auto">
-              Свяжитесь с нами для бронирования или получения дополнительной информации
+              Свяжитесь с нами для бронирования или получения дополнительной
+              информации
             </p>
           </div>
 
@@ -42,7 +43,9 @@ export default function ContactsPage() {
                       </div>
                       <div>
                         <div className="text-sm text-secondary">Email</div>
-                        <div className="font-semibold">lavillapine@yandex.ru</div>
+                        <div className="font-semibold">
+                          lavillapine@yandex.ru
+                        </div>
                       </div>
                     </div>
 
@@ -53,15 +56,15 @@ export default function ContactsPage() {
                       <div>
                         <div className="text-sm text-secondary">Адрес</div>
                         <div className="font-semibold">
-                          Кольцевая улица, 4, посёлок Тульский<br />Майкопский район, Республика Адыгея
+                          Кольцевая улица, 4, посёлок Тульский
+                          <br />
+                          Майкопский район, Республика Адыгея
                         </div>
                       </div>
                     </div>
                   </div>
                 </CardContent>
               </Card>
-
-              
             </div>
 
             {/* Contact Form and Map */}
@@ -76,13 +79,14 @@ export default function ContactsPage() {
                       Наше расположение
                     </h4>
                     <p className="text-secondary text-sm">
-                      Республика Адыгея, Майкопский район, посёлок Тульский, Кольцевая улица, 4
+                      Республика Адыгея, Майкопский район, посёлок Тульский,
+                      Кольцевая улица, 4
                     </p>
                   </div>
-                  <YandexMap 
-                    center={[44.6076, 40.1128]}
-                    zoom={13}
-                    markerCoords={[44.6076, 40.1128]}
+                  <YandexMap
+                    center={[44.496225, 40.165312]}
+                    zoom={15}
+                    markerCoords={[44.496225, 40.165312]}
                     markerText="La Villa Pine - Гостевые дома"
                     className="border-0"
                   />

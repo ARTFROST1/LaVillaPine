@@ -137,7 +137,7 @@ export default function BookingPage() {
                 </Button>
                 <Button 
                   variant="outline"
-                  className="border-white text-white hover:bg-white/10 hover:text-white font-medium px-6 transition-colors"
+                  className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border h-10 py-2 border-white text-white hover:bg-white/10 hover:text-white font-medium px-6 transition-colors bg-[#453d3b]"
                   onClick={() => window.location.href = 'mailto:lavillapine@yandex.ru'}
                 >
                   Написать
