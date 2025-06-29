@@ -17,156 +17,130 @@ export default function BookingPage() {
         <div className="w-full max-w-4xl mx-auto">
           <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 md:p-12">
             
-            {/* Header */}
-            <div className="text-center mb-12">
-              <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-                Модуль Бронирования
+            {/* Simple Header */}
+            <div className="text-center mb-8">
+              <h1 className="text-3xl md:text-4xl font-bold text-primary">
+                Бронирование номеров
               </h1>
-              <p className="text-xl text-secondary leading-relaxed">
-                Забронируйте свой идеальный отдых в La Villa Pine
-              </p>
+            </div>
+
+            {/* Booking Widget Area */}
+            <div className="bg-white rounded-lg border-2 border-dashed border-accent/30 p-8 mb-12 text-center">
+              <div className="space-y-4">
+                <div className="text-accent font-medium text-lg">
+                  Модуль бронирования
+                </div>
+                <div className="text-secondary">
+                  Вставьте HTML код системы бронирования здесь
+                </div>
+                <div className="text-sm text-gray-400 bg-gray-50 rounded p-4 font-mono">
+                  &lt;!-- HTML код модуля бронирования --&gt;
+                </div>
+              </div>
             </div>
 
             {/* Booking Information */}
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div className="space-y-6">
-                <h2 className="text-2xl font-semibold text-primary mb-6">
-                  Информация о бронировании
-                </h2>
-                
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center flex-shrink-0">
+            <div className="space-y-8 mb-12">
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="text-center p-4">
+                  <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-3">
                     <Calendar className="w-6 h-6 text-accent" />
                   </div>
-                  <div>
-                    <h3 className="font-semibold text-primary mb-2">Доступность</h3>
-                    <p className="text-secondary">
-                      Круглогодично. Рекомендуем бронировать заранее в сезон высокого спроса.
-                    </p>
-                  </div>
+                  <h3 className="font-semibold text-primary mb-2">Доступность</h3>
+                  <p className="text-secondary text-sm">
+                    Круглогодично. Бронируйте заранее в сезон.
+                  </p>
                 </div>
 
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="text-center p-4">
+                  <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-3">
                     <Clock className="w-6 h-6 text-accent" />
                   </div>
-                  <div>
-                    <h3 className="font-semibold text-primary mb-2">Заезд/Выезд</h3>
-                    <p className="text-secondary">
-                      Заезд с 15:00, выезд до 12:00. Возможна договоренность о других временах.
-                    </p>
-                  </div>
+                  <h3 className="font-semibold text-primary mb-2">Заезд/Выезд</h3>
+                  <p className="text-secondary text-sm">
+                    Заезд с 15:00, выезд до 12:00.
+                  </p>
                 </div>
 
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="text-center p-4">
+                  <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-3">
                     <Users className="w-6 h-6 text-accent" />
                   </div>
-                  <div>
-                    <h3 className="font-semibold text-primary mb-2">Вместимость</h3>
-                    <p className="text-secondary">
-                      До 6 гостей в каждом доме. Дополнительные спальные места по запросу.
-                    </p>
-                  </div>
+                  <h3 className="font-semibold text-primary mb-2">Вместимость</h3>
+                  <p className="text-secondary text-sm">
+                    До 6 гостей в каждом доме.
+                  </p>
                 </div>
               </div>
 
-              <div className="space-y-6">
-                <h2 className="text-2xl font-semibold text-primary mb-6">
-                  Что включено
-                </h2>
-                
-                <ul className="space-y-3">
-                  <li className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-accent rounded-full"></div>
+              <div className="bg-gray-50 rounded-lg p-6">
+                <h3 className="font-semibold text-primary mb-4 text-center">Что включено</h3>
+                <div className="grid md:grid-cols-2 gap-3 text-sm">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-1.5 h-1.5 bg-accent rounded-full"></div>
                     <span className="text-secondary">Полностью оборудованная кухня</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-accent rounded-full"></div>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-1.5 h-1.5 bg-accent rounded-full"></div>
                     <span className="text-secondary">Сауна с подогревом</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-accent rounded-full"></div>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-1.5 h-1.5 bg-accent rounded-full"></div>
                     <span className="text-secondary">Бассейн с подогревом</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-accent rounded-full"></div>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-1.5 h-1.5 bg-accent rounded-full"></div>
                     <span className="text-secondary">Wi-Fi по всей территории</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-accent rounded-full"></div>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-1.5 h-1.5 bg-accent rounded-full"></div>
                     <span className="text-secondary">Парковка</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-accent rounded-full"></div>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-1.5 h-1.5 bg-accent rounded-full"></div>
                     <span className="text-secondary">Постельное белье и полотенца</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Booking Platform Notice */}
-            <div className="bg-gradient-to-r from-accent/10 to-accent/5 rounded-xl p-8 mb-8">
-              <div className="text-center">
-                <h2 className="text-2xl font-semibold text-primary mb-4">
-                  Система Бронирования
-                </h2>
-                
-                <div className="bg-white/80 rounded-lg p-6 border-2 border-dashed border-accent/30">
-                  <p className="text-accent font-medium text-lg">
-                    🏗️ Интеграция с платформой бронирования
-                  </p>
-                  <p className="text-secondary mt-2">
-                    Здесь будет размещен виджет системы бронирования
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* Contact for Booking */}
-            <div className="bg-primary text-white rounded-xl p-8">
-              <div className="text-center mb-8">
-                <h2 className="text-2xl font-semibold mb-4">
-                  Свяжитесь с нами для бронирования
-                </h2>
-                <p className="text-gray-200">
-                  Наша команда поможет вам выбрать идеальные даты и оформить бронирование
-                </p>
-              </div>
+            {/* Contact Section */}
+            <div className="bg-primary text-white rounded-lg p-6">
+              <h3 className="text-xl font-semibold text-center mb-6">
+                Контакты для бронирования
+              </h3>
               
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="flex items-center justify-center space-x-4 bg-white/10 rounded-lg p-4">
-                  <Phone className="w-6 h-6 text-accent" />
-                  <div>
-                    <p className="font-medium">Телефон</p>
-                    <p className="text-gray-200">+7 918 924 0007</p>
+              <div className="grid md:grid-cols-2 gap-4 mb-6">
+                <div className="flex items-center justify-center space-x-3 bg-white/10 rounded-lg p-3">
+                  <Phone className="w-5 h-5 text-accent" />
+                  <div className="text-sm">
+                    <div className="font-medium">Телефон</div>
+                    <div className="text-gray-200">+7 918 924 0007</div>
                   </div>
                 </div>
                 
-                <div className="flex items-center justify-center space-x-4 bg-white/10 rounded-lg p-4">
-                  <Mail className="w-6 h-6 text-accent" />
-                  <div>
-                    <p className="font-medium">Email</p>
-                    <p className="text-gray-200">lavillapine@yandex.ru</p>
+                <div className="flex items-center justify-center space-x-3 bg-white/10 rounded-lg p-3">
+                  <Mail className="w-5 h-5 text-accent" />
+                  <div className="text-sm">
+                    <div className="font-medium">Email</div>
+                    <div className="text-gray-200">lavillapine@yandex.ru</div>
                   </div>
                 </div>
               </div>
               
-              <div className="flex flex-col sm:flex-row gap-4 mt-8 justify-center">
+              <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Button 
-                  size="lg"
-                  className="bg-accent hover:bg-accent/90 text-white font-semibold px-8"
+                  className="bg-accent hover:bg-accent/90 text-white font-medium px-6"
                   onClick={() => window.location.href = 'tel:+79189240007'}
                 >
-                  Позвонить сейчас
+                  Позвонить
                 </Button>
                 <Button 
-                  size="lg"
                   variant="outline"
-                  className="border-white text-white hover:bg-white/10 font-semibold px-8"
+                  className="border-white text-white hover:bg-white/10 font-medium px-6"
                   onClick={() => window.location.href = 'mailto:lavillapine@yandex.ru'}
                 >
-                  Написать письмо
+                  Написать
                 </Button>
               </div>
             </div>
