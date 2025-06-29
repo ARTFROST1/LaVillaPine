@@ -1,6 +1,7 @@
-import { Phone, Mail, MapPin, Calendar } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import ContactForm from "@/components/ui/contact-form";
+import YandexMap from "@/components/ui/yandex-map";
 
 export default function ContactsPage() {
   return (
@@ -67,20 +68,24 @@ export default function ContactsPage() {
             <div className="space-y-8 animate-slide-in-right">
               <ContactForm />
 
-              {/* Yandex Maps Placeholder */}
-              <Card className="p-6 shadow-sm">
-                <CardContent className="pt-6">
-                  <h4 className="text-xl font-semibold text-primary mb-4">
-                    Наше расположение
-                  </h4>
-                  <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-                    <div className="text-center text-gray-500">
-                      <MapPin className="w-16 h-16 mx-auto mb-4" />
-                      <p>
-                        Интерактивная карта<br />Yandex Maps
-                      </p>
-                    </div>
+              {/* Yandex Maps */}
+              <Card className="shadow-sm overflow-hidden">
+                <CardContent className="p-0">
+                  <div className="p-6 pb-4">
+                    <h4 className="text-xl font-semibold text-primary mb-2">
+                      Наше расположение
+                    </h4>
+                    <p className="text-secondary text-sm">
+                      Республика Адыгея, Майкопский район, посёлок Тульский, Кольцевая улица, 4
+                    </p>
                   </div>
+                  <YandexMap 
+                    center={[44.6076, 40.1128]}
+                    zoom={13}
+                    markerCoords={[44.6076, 40.1128]}
+                    markerText="La Villa Pine - Гостевые дома"
+                    className="border-0"
+                  />
                 </CardContent>
               </Card>
             </div>
