@@ -153,7 +153,7 @@ var vite_config_default = defineConfig({
       deny: ["**/.*"]
     }
   },
-  base: "/GuestHavenHotel/"
+  base: "/LaVillaPine/"
 });
 
 // server/vite.ts
